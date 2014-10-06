@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* CSS Document */
+/* colour scheme
+		#006B7F
+		#4CE2FF
+		#00D5FF
+		#26717F
+		#00ABCC   */
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #fff;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #00ABCC;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Indie Flower', cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Bree Serif', serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'Bree Serif', serif;
+	color: #006B7F;	
+}
+
+@media all and (max-width: 499px) {
+	h1{
+		font-size: 1.7rem;	
+	}
+	h2{
+		font-size: 1.4rem;	
+	}
+	h3{
+		font-size: 1.1rem;	
+	}
+}
+@media all and (min-width: 500px) and (max-width: 719px) {
+	h1{
+		font-size: 1.7rem;	
+	}
+	h2{
+		font-size: 1.4rem;	
+	}
+	h3{
+		font-size: 1.1rem;	
+	}
+}
+@media all and (min-width: 720px) and (max-width: 1080px) {
+	h1{
+		font-size: 2.4rem;	
+	}
+	h2{
+		font-size: 2.0rem;	
+	}
+	h3{
+		font-size: 1.6rem;	
+	}
+}
+@media all and (min-width: 1080px) {
+	h1{
+		font-size: 3.6rem;	
+	}
+	h2{
+		font-size: 3.0rem;	
+	}
+	h3{
+		font-size: 2.4rem;	
+	}
+}	
+	
+p, li, a{
+	font-weight: 400;
+	font-family: 'Pontano Sans', sans-serif;
+	color: #006B7F;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;
+	width: 100%;	
+}
+.masthead{
+	width: 100%;
+}
+.nav{
+	display: inline;
+}
+.navbar{
+	width: 100%;
+}
+.footer{
+	float: left;
+	width: 100%;
+}
+@media all and (max-width: 499px) {
+	.nav{
+		float: left;
+		width: 100%;
+	}
+	.main{
+		float: left;
+		width: 100%;
+	}
+	.two{
+		float: left;
+		width: 100%;
+	}	
+	.three{
+		float: left;
+		width: 100%;
+	}	
+}
+
+@media all and (min-width: 500px) and (max-width: 719px) {
+	.nav{
+		float: left;
+		width: 100%;
+	}
+	.main{
+		float: left;
+		width: 100%;
+	}
+	.two {
+		float: left;
+		width: 50%;
+	}
+	.three{
+		float: right;
+		width: 50%;
+	}	
+}
+
+@media all and (min-width: 720px) and (max-width: 1080px) {
+	.nav{
+		float: left;
+		width: 100%;
+	}
+	.main{
+		float: left;
+		width: 50%;
+	}
+	.two{
+		float: left;
+		width: 25%;
+	}
+	.three {
+		float: left;
+		width: 25%;
+	}	
+}
+
+@media all and (min-width: 1080px) {
+	.nav{
+		float: left;
+		width: 22%;
+	}
+	.main{
+		float: left;
+		width: 28%;
+	}
+	.two{
+		float: left;
+		width: 25%;
+	}
+	.three{
+		float: left;
+		width: 25%;
+	}
+}
+
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	/*width: 240px;*/  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+@media all and (max-width: 499px) {
+	.navbar li{
+		width: 50%;
+	}
+	.nav{
+		background-color: #006B7F;
+	}
+}
+@media all and (min-width: 500px) and (max-width: 719px) {
+	.navbar li{
+		width: 25%;
+	}
+	.nav{
+		background-color: #006B7F;
+	}
+}
+@media all and (min-width: 720px) and (max-width: 1080px) {
+	.navbar li{
+		width: 25%;
+	}
+	.nav{
+		background-color: #006B7F;
+	}
+}
+@media all and (min-width: 1080px) {
+	.navbar li{
+		width: 240px;
+	}
+	.nav{
+		background-color: #fff;
+	}
+}	
+
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #006B7F;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #00D5FF;
+}
+
+/***********************************
+					Content
+***********************************/ 
+
+
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #4CE2FF;	
+	background-color: #26717F;
+}
